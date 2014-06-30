@@ -75,6 +75,13 @@ $(function(){
     }
   })
 
+  $('.category p').hide();
+
+  $('.category').on('mouseenter', function(){
+      $('.category p').hide();
+    $(this).find('p').toggle();
+  })
+
   typer('.hi-cute-text', 1000, aliciarray, 200, 150);
 })
 
